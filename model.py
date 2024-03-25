@@ -2,7 +2,7 @@ import pandas as pd
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score
 from sklearn.model_selection import train_test_split
-import pickle
+import joblib
 
 
 # Read original dataset
@@ -29,4 +29,4 @@ accuracy = accuracy_score(y_test, y_pred)
 print(f"Accuracy score: {accuracy}")  # Accuracy: 0.91
 
 # save the model to disk
-pickle.dump(clf, open("rf_model.pkl", "wb"))
+joblib.dump(clf, "rf_model.sav")

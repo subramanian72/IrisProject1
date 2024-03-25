@@ -1,5 +1,5 @@
-import pickle
+import joblib
 
 def predict(data):
-    clf = pickle.load(open("rf_model.pkl",'rb'))
+    clf = joblib.load("rf_model.sav")
     return clf.predict(data)

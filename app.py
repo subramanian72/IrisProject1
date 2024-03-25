@@ -1,6 +1,5 @@
 import pandas as pd
 import streamlit as st
-import pickle
 import numpy as np
 from prediction import predict
 

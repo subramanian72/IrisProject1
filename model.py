@@ -26,7 +26,7 @@ y_pred = clf.predict(X_test)
 
 # calculate accuracy
 accuracy = accuracy_score(y_test, y_pred)
-print(f"Accuracy: {accuracy}")  # Accuracy: 0.91
+print(f"Accuracy score: {accuracy}")  # Accuracy: 0.91
 
 # save the model to disk
 pickle.dump(clf, open("rf_model.pkl", "wb"))
